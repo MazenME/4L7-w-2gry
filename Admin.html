@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/Admin.css">
+        <link rel="stylesheet" href="css/Register.css">
+
+        <title>Admin</title>
+    </head>
+    <body>
+        <header>
+
+            <div class="container">
+                <a href="Home.html">
+                    <div class="logo">
+                        <h3>Dish Hardy</h3>
+                        <img width="70" src="images/logo.jpeg" alt="">
+                    </div>
+                </a>
+    
+                <div class="links">
+                    <span class="icon" data-aos="fade-down">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+    
+                    <ul>
+                        <li><a id="btnLogout">logout</a></li>
+                        <li><a href="fav.html">Favorite</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a  id="Admino" href="Admin.html">Admin</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+    
+        </header>
+    
+
+        <section class="Admin-section">
+            <div class="Admin-container">
+                <h2 class="Admin-h2">Add Recipes</h2>
+                <div class="Admin-actions">
+                    <!-- <p class="Admin-message" id="Admin-message">Enter the whole data!</p> -->
+                    <div class="Admin-inputs">
+                        <!-- <form> -->
+                            <label for="Admin-image-ID">ID</p>
+                            <input type="text" id="Admin-image-ID" name="Admin-ID" placeholder="write ID" required>
+                            <label for="Admin-recipe-name">Name</label>
+                            <input type="text" id="Admin-recipe-name" name="Admin-recipe-name" placeholder="Recipe Name" required>
+                            <p>Course</p>
+                            <select name="Admin-course" id="Admin-course">
+                                <!-- <option value="hide">-- Course --</option> -->
+                                <option value="Appetizers">Appetizers</option>
+                                <option value="Main-Course">Main Course</option>
+                                <option value="Dessert">Dessert</option>
+                            </select>
+                            <label for="Admin-image-source">Source</p>
+                            <input type="url" id="Admin-image-source" name="Admin-image-source" placeholder="Image URL" required>
+                            <label for="Admin-recipe-description">Description</p>
+                            <textarea id="Admin-recipe-description" name="Admin-recipe-description" placeholder="Describe Recipe" required></textarea>
+                            <label for="Admin-recipe-ingrediants">Ingredients</p>
+                            <textarea id="Admin-recipe-ingrediants" name="Admin-recipe-ingrediants" placeholder="Write Ingredients" required></textarea>
+                            <div class="Admin-inputs-buttons">
+                                <button type="submit" id="Admin-submit">Add</button>
+                                <button id="Admin-delete-all">Dalete All</button>
+                                <!-- <button id="Admin-edit">edit</button> -->
+                            </div>
+                        <!-- </form> -->
+                    </div>
+                    <!-- <button id="Admin-delete-all">Delete All</button> -->
+                </div>
+
+                <div class="Admin-recipes" id="Admin-recipes">
+                    <!-- <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit" class="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div>
+                    <div class="Admin-recipe-card">
+                        <img src="images/ae0c0b5a-6e9d-4f5f-b3f8-f6ea38d17024.jpeg">
+                        <p>image name</p>
+                        <button id="Admin-card-edit" class="Admin-card-edit">Edit</button>
+                        <button id="Admin-card-delete">Delete</button>
+                    </div> -->
+                    
+                </div>
+
+            </div>
+            
+        </section>
+
+        <script src="js/Admin.js"></script>
+    </body>
+</html>

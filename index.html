@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Register.css">
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <h3>Dish Hardy</h3>
+                <img width="70" src="/images/logo.jpeg" alt="">
+            </div>
+
+            <div class="links">
+                <span class="icon" data-aos="fade-down">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="container">
+
+            <form action="" method="">
+                <h2>Registeration
+
+                </h2>
+                <label class="from-label" for="nameUp">Name</label>
+                <input oninput="validateName()" id="nameUp" type="text" name="userNameUp"
+                    placeholder="Enter your name" required>
+                <p class="text-danger d-none" id="nameAlert">at least 3 letters</p>
+
+                <label for="emailUp">Email</label>
+                <input oninput="validateemail()" id="emailUp" type="text" name="email" placeholder="Enter your e-mail"
+                    required>
+                <p class="text-danger d-none" id="emailAlert">name@example.com</p>
+
+
+                <label for="passwordUp">Password</label>
+                <input oninput="validatePass()" id="passwordUp" type="password" name="password" required
+                    placeholder="Enter your password">
+                <p class="text-danger d-none" id="passwordAlert">must be from 5 to 15 letters or numberss</p>
+
+
+                <label for="confirmPasswordUp">Confirm Password</label>
+            <input oninput="validateConfirm()" id="confirmPasswordUp" type="password" name="confirmPassword" required
+                placeholder="Confirm your password">
+                <p class="text-danger d-none" id="confirmPasswordAlert">passwords don't match</p>
+
+                
+
+                <div class="radio" id ="1">
+                    <label>
+                        admin
+                        <input type="radio" value="admin" name="authorisation" />
+                    </label>
+
+                    <label>
+                        user
+                        <input type="radio" value="user" name="authorisation" />
+                    </label>
+                </div>
+
+                <p class="text-success d-none" id="confirmMsg">Sucess</p>
+                <p class="text-danger d-none" id="existMsg">this email already exist</p>
+                <p class="text-danger d-none" id="failMsg">Failed to signUp try again</p>
+
+
+                <button id="btnSignup">Register</button>
+            </form>
+            <h4>
+                Already have an account? <a href="login.html">Login</a>
+            </h4>
+        </div>
+    </section>
+
+    <script  src="js/main.js"></script>
+</body>
+
+</html>

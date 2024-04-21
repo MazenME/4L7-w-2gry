@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Product Details</title>
+  <link href="css/details.css" rel="stylesheet">
+  <link href="css/Register.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container">
+      <a href="Home.html">
+        <div class="logo">
+            <h3>Dish Hardy</h3>
+            <img width="70" src="images/logo.jpeg" alt="">
+        </div>
+    </a>
+
+        <div class="links">
+            <span class="icon" data-aos="fade-down">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+
+            <ul>
+                <li><a id="btnLogout">logout</a></li>
+                <li><a href="fav.html">Favorite</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a  id="Admino" href="Admin.html">Admin</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<!-------------------------------------------end nav--------------------------------------->
+
+
+<div class="section-a">
+  <div class="container">
+
+      <div class="image">
+          <img  id="recipeImg" src="#">
+      </div>
+
+
+      <div class="title-container">
+
+        <div class="content">
+          <h2 class="title" id="recipeName">Name</h2>
+          <br><hr><br>
+          <h4 id ="recipeCourse">Course</h4>
+  
+        </div>
+        
+    </div>
+  </div>
+</div>
+
+
+<br><br><br><br><br>
+
+
+<!---second section-->
+
+
+
+<div class="section-b">
+  <div class="container">
+    <div class="ingredients">
+      <h2>Ingredients</h2>
+      <br><br>
+      <table class="table-fill">
+        <thead>
+        <tr>
+        <th class="text-left">Name</th>
+        <th class="text-left">Quantity</th>
+        </tr>
+        </thead>
+        <tbody class="table-hover" id="recipeIngredients">
+        </tbody>
+        </table>
+    </div>
+    <br><br><br><br>
+    <div class="tab">
+      <ul>
+        <li><a href="#1">Instructions</a></li>
+      </ul>
+    </div>
+    <div class="box" id="1">
+      <p id="recipeInstructions">
+        Details
+      </p>
+      <br>
+      
+
+    </div>
+  </div>
+</div>  
+
+
+
+
+<script src= "/js/Details.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Register.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <h3>Dish Hardy</h3>
+                <img width="70" src="/images/logo.jpeg" alt="">
+            </div>
+
+            <div class="links">
+                <span class="icon" data-aos="fade-down">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="index.html">Register</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section>
+        <div class="container">
+            <h2>Login</h2>
+
+
+
+            <form action="" method="">
+
+
+                <label for="emailIn">Email</label>
+                <input id="emailIn" type="text" name="email" placeholder="Enter your e-mail" required>
+
+                <label for="passwordIn">Password</label>
+                <input id="passwordIn" type="password" placeholder="Enter your password" required>
+                <p class="text-danger d-none" id="fillMsg">All fields are required</p>
+                <p class="text-danger d-none" id="errorMsg">Your email or password not correct</p>
+                <p class="text-success d-none" id="confirmMsg">Sucess</p>
+
+                <a id="btnLogin"><button type="button">Login</button></a>
+            </form>
+
+            <h4>
+                Don't have an account? <a href="index.html">Register</a>
+            </h4>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+ 

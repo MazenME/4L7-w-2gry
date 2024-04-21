@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dish harty</title>
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="https://kit.fontawesome.com/e52100db91.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- star header -->
+    <header>
+
+        <div class="container">
+            <a href="Home.html">
+                <div class="logo">
+                    <h3>Dish Hardy</h3>
+                    <img width="70" src="images/logo.jpeg" alt="">
+                </div>
+            </a>
+
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <ul>
+                    <li><a id="btnLogout">logout</a></li>
+                    <li><a href="fav.html">Favorite</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a  id="Admino" href="Admin.html">Admin</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </header>
+<!-- end header -->
+
+<!-- start hero -->
+    <section class="hero">
+        <div class="hero-section">
+            <h2>welcome to Dish harty website</h2>
+            <p>Find your favourite dish</p>
+            <form action="#" class="search-box">
+                <input type="text" id="search" placeholder="search-recipe">
+                <button type="submit" class="search1">search</button>
+                <input type="text" id="searchIngredient" placeholder="search-ingredient">
+                <button type="submit">search</button>
+            </form>
+        </div>
+    </section>
+<!-- end hero -->
+
+<!-- start recipes  -->
+    <section class="recipes">
+        <h1>Recipes</h1>
+        <div id="results" class="recipe-section">
+            <div class="recipe-card">
+                
+            </div>
+        </div>
+    </section>
+    <script src ="/js/Details.js"></script>
+<!-- end recipes -->
+
+
+    
+<!-- serch by meal name and ingrediant finish -->
+    <script src="js/search.js">
+    </script>
+
+    <script src="js/Admin.js"></script>
+</body>
+
+</html>
